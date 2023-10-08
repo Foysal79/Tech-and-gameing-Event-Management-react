@@ -1,15 +1,15 @@
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 
 const NavBar = () => {
 
     const linkNav = <>
     <li><NavLink className="mr-4" to='/' >Home</NavLink></li>
-    <li><NavLink className="mr-4" to='/upComingEvent' >upcoming Event</NavLink></li>
-    <li><NavLink className="mr-4" to='/eventList' >Event List</NavLink></li>
+    <li><NavLink className="mr-4" to='/Service' >Event List</NavLink></li>
     <li><NavLink className="mr-4" to='/about' >About Us</NavLink></li>
-   <li> <NavLink className="mr-4" to='/register' >Register</NavLink></li>
-   <li> <NavLink className="mr-4" to='/cart' >cart</NavLink></li>
+    <li><NavLink className="mr-4" to='/blog' >Blog</NavLink></li>
+   
+   
     
     
     </>
@@ -28,7 +28,7 @@ const NavBar = () => {
         }
       </ul>
     </div>
-    <a className="btn btn-ghost normal-case text-4xl">Evento</a>
+    <Link to='/'><a className="font-bold text-4xl">EvenTo</a></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -38,7 +38,7 @@ const NavBar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-    <a className="btn">Button</a>
+    <Link to='/register' ><a className="btn">register</a></Link>
   </div>
 </div>
     );

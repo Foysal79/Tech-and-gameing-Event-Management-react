@@ -5,7 +5,7 @@ import PopularCard from '../card/PopularCard';
 const PopularEvent = () => {
     const popularCards = useLoaderData();
     return (
-        <div className='text-center pt-4 lg:pt-16 w-11/12 mx-auto'>
+        <div className='text-center pt-4 lg:pt-16 w-11/12 mx-auto bg-sky-100 p-8 lg:p-11 rounded-lg'>
             <h3 className='text-4xl font-semibold text-orange-400'>Event</h3>
             <h1 className='text-5xl font-extrabold'>POPULAR <span className='text-blue-700'>EVENT</span></h1>
              

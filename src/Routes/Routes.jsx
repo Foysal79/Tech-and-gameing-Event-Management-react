@@ -4,6 +4,8 @@ import Services from "../Pages/Services";
 import Home from "../Home/Home";
 import PopularEvent from "../Pages/PopularEvent";
 import Error from "../Pages/Error";
+import RecentEvent from "../Pages/WelcomeTo";
+import Register from "../Pages/Register";
 
 
 const router = createBrowserRouter([
@@ -26,7 +28,16 @@ const router = createBrowserRouter([
             path:"/popularEvent",
             element: <PopularEvent></PopularEvent>,
             loader: () => fetch('/data.json'),
+        },
+        {
+          path: '/about',
+          element: <RecentEvent></RecentEvent>
+        },
+        {
+          path: '/register',
+          element: <Register></Register>
         }
+        
       ]
     },
   ]);

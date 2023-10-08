@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const RecentEvent = () => {
   return (
@@ -21,7 +22,7 @@ const RecentEvent = () => {
               <h2 className="card-title text-2xl font-bold">ABOUT <span className="text-blue-700">US</span></h2>
               <p className="text-left text-sm font-medium text-gray-500" >Welcome to <span className="font-bold text-black">Evento</span> , your premier destination for top-notch event management in the thrilling realms of technology and gaming. We are the driving force behind some of the most electrifying and immersive gatherings that unite tech enthusiasts, gamers, developers, and industry leaders across the United States</p>
               <div className="card-actions justify-start mt-8">
-                <button className="btn btn-primary">Explore More</button>
+               <Link to='/about'> <button className="btn btn-primary">Explore More</button></Link>
               </div>
             </div>
           </div>
