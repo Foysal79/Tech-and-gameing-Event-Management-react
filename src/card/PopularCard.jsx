@@ -1,22 +1,23 @@
 import React from "react";
 
 const PopularCard = ({items}) => {
+    const {name, img, short_details} = items;
     
   return (
     <div>
-      <div className="card  bg-base-100 shadow-xl">
+      <div className="card h-full  bg-base-100 shadow-xl">
         <figure>
-          <img
-            src="/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
-            alt="Shoes"
+          <img className="w-full h-56"
+            src={img}
+            alt="img coming soon"
           />
         </figure>
         <div className="card-body">
-          <h2 className="card-title">Shoes!</h2>
-          <p>If a dog chews shoes whose shoes does he choose?</p>
-          <div className="card-actions justify-end">
-            <button className="btn btn-primary">Buy Now</button>
-          </div>
+          <h2 className="card-title text-2xl font-bold">{name}</h2>
+          <p className="text-sm font-semibold text-left">
+            {short_details}
+          </p>
+          
         </div>
       </div>
     </div>

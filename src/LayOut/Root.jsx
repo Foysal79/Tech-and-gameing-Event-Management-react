@@ -3,15 +3,18 @@ import Home from "../Home/Home";
 import NavBar from "../Pages/NavBar";
 import Services from "../Pages/Services";
 import SimpleSlider from "../Pages/Slider";
+import Footer from "../Pages/Footer";
+import Copyright from "../Pages/Copyright";
 
 
 const Root = () => {
     return (
-        <div className="w-11/12 mx-auto mt-4  font-ral">
+        <div className="font-ral">
             
             <NavBar></NavBar>
             <Outlet></Outlet>
-            <h1 className="text-5xl">fotter</h1>
+            <Footer></Footer>
+            <Copyright></Copyright>
         </div>
     );
 };

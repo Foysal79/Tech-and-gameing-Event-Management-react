@@ -7,7 +7,7 @@ const Services = () => {
     const cards = useLoaderData();
     
     return (
-        <div data-aso="fade-up" className='text-center pt-4 lg:pt-16'>
+        <div data-aso="fade-up" className='text-center pt-4 lg:pt-16 w-11/12 mx-auto'>
             
             <h1 className='text-5xl font-extrabold uppercase mb-14'>Our <span className='text-blue-600'>
                 Event</span> <br /> Management Services</h1>
