@@ -1,12 +1,32 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useContext } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { AuthContext } from '../ContexApi/AuthProvider';
+import toast from 'react-hot-toast';
 
 const Login = () => {
+
+  const {LogIn} = useContext(AuthContext);
+  const navigate = useNavigate();
+    const location = useLocation();
     const handelLogin = (e) => {
+      e.preventDefault();
         
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(email, password);
+       
+
+        LogIn(email, password)
+        .then(result => {
+          console.log(result.user)
+          toast.success('Successfully Login !')
+          navigate(location?.state ? location.state : '/')
+        })
+        .catch(error => {
+          console.log(error)
+          toast.error(error.message)
+
+        })
     }
 
 

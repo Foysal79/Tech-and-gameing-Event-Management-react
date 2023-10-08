@@ -1,10 +1,10 @@
 import { Outlet } from "react-router-dom";
-import Home from "../Home/Home";
+
 import NavBar from "../Pages/NavBar";
-import Services from "../Pages/Services";
-import SimpleSlider from "../Pages/Slider";
+
 import Footer from "../Pages/Footer";
 import Copyright from "../Pages/Copyright";
+import { Toaster } from "react-hot-toast";
 
 
 const Root = () => {
@@ -15,6 +15,7 @@ const Root = () => {
             <Outlet></Outlet>
             <Footer></Footer>
             <Copyright></Copyright>
+            <Toaster/>
         </div>
     );
 };
