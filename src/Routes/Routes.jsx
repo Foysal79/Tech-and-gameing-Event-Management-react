@@ -6,6 +6,7 @@ import PopularEvent from "../Pages/PopularEvent";
 import Error from "../Pages/Error";
 import RecentEvent from "../Pages/WelcomeTo";
 import Register from "../Pages/Register";
+import Login from "../Pages/Login";
 
 
 const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const router = createBrowserRouter([
         {
           path: '/register',
           element: <Register></Register>
+        },
+        {
+          path: '/login',
+          element: <Login></Login>
         }
         
       ]
