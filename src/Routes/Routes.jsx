@@ -9,6 +9,7 @@ import Register from "../Pages/Register";
 import Login from "../Pages/Login";
 import EventDetails from "../PrivateRoute/EventDetails";
 import PrivateRoute from "./PrivateRoute";
+import ContactUs from "../PrivateRoute/ContactUs";
 
 
 const router = createBrowserRouter([
@@ -48,6 +49,10 @@ const router = createBrowserRouter([
           path: '/eventDetails/:id',
           element: <PrivateRoute><EventDetails></EventDetails></PrivateRoute>,
           loader: () => fetch('/data.json'),
+        },
+        {
+          path: '/contact',
+          element: <PrivateRoute> <ContactUs></ContactUs> </PrivateRoute>
         }
         
       ]

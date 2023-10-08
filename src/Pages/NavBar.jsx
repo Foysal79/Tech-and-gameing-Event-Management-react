@@ -11,6 +11,12 @@ const NavBar = () => {
     <li><NavLink className="mr-4" to='/Service' >Event List</NavLink></li>
     <li><NavLink className="mr-4" to='/about' >About Us</NavLink></li>
     <li><NavLink className="mr-4" to='/blog' >Blog</NavLink></li>
+    {
+      user &&  <li><NavLink className="mr-4" to='/contact' >Contact us</NavLink></li>
+    }
+    {
+      user && <li><NavLink className="mr-4" to='/ourTeam' >Our Team</NavLink></li>
+    }
    
    
     
@@ -19,7 +25,7 @@ const NavBar = () => {
 
 
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-blue-100 px-8 py-4">
   <div className="navbar-start">
     <div className="dropdown">
       <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -31,7 +37,7 @@ const NavBar = () => {
         }
       </ul>
     </div>
-    <Link to='/'><a className="font-bold text-4xl">EvenTo</a></Link>
+    <Link to='/'><a className="font-extrabold text-4xl text-blue-700">EvenTo</a></Link>
   </div>
   <div className="navbar-center hidden lg:flex">
     <ul className="menu menu-horizontal px-1">
@@ -44,8 +50,8 @@ const NavBar = () => {
     {
       user ? <div className="flex gap-4 items-center">
         <p>{user?.displayName}</p> <img className="rounded-full w-10" src={user?.photoURL} alt="img" />
-        <button onClick={() => LogOut()} className="btn" >LogOut</button>
-      </div> : <Link to='/login' ><a className="btn">Login</a></Link>
+        <button onClick={() => LogOut()} className="btn bg-blue-600 hover:bg-blue-700 text-white" >LogOut</button>
+      </div> : <Link to='/login' ><a className="btn bg-blue-600 hover:bg-blue-700 text-white">Login</a></Link>
     }
     
   </div>
