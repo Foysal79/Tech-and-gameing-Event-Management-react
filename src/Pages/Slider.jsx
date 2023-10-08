@@ -18,7 +18,7 @@ export default function SimpleSlider() {
 
 
   {/* 1 */}
-      <div className=" h-[80vh]  bg-[url(https://i.ibb.co/YdCHNTW/6864937-23324.jpg)] bg-cover  bg-no-repeat text-center  ">
+      <div className=" h-[80vh]  bg-[url(https://i.ibb.co/Mk6KW09/20231008133828-fpdl-in-portrait-young-boy-dressed-white-t-shirt-using-virtual-reality-glasses-holds.jpg)] bg-cover  bg-no-repeat text-center  ">
         
         <h1 className="lg:text-6xl font-bold mt-28 lg:mt-56 text-white">Create Beautiful <span className="text-orange-500">Memories</span> <br /> At Every Event</h1>
         <button  className="bg-yellow-500 mt-10  text-white text-2xl font-bold px-12 py-4 rounded-lg">create Your Event</button>
@@ -27,7 +27,7 @@ export default function SimpleSlider() {
       </div>
 
 {/* 2 */}
-      <div className=" h-[80vh]  bg-[url(https://i.ibb.co/mh0cqgw/binary-code-code-numbers-147523-1920x1080.jpg)] bg-cover  bg-no-repeat text-center  ">
+      <div className=" h-[80vh]  bg-[url(https://i.ibb.co/tPsjbH0/20231008133102-fpdl-in-professional-gamers-game-chair-concept-cyber-sport-arena-3d-rendering-256339.jpg)] bg-cover  bg-no-repeat text-center  ">
         
         <h1 className="lg:text-6xl font-bold mt-28 lg:mt-36 text-white">Create Beautiful Memories & <br /> Successful Events Every Time With <br /> <span className="text-orange-400">EvenTo</span> <br /> Management</h1>
         <button  className="bg-yellow-500 mt-10  text-white text-2xl font-bold px-12 py-4 rounded-lg">create Your Event</button>
@@ -45,7 +45,7 @@ export default function SimpleSlider() {
       </div>
 {/* 4 */}
 
-      <div className=" h-[80vh]  bg-[url(https://i.ibb.co/Q6VSWG9/20231008001907-fpdl-in-e-sport-arena-43901-82-large.jpg)] bg-cover  bg-no-repeat text-center  ">
+      <div className=" h-[80vh]  bg-[url(https://i.ibb.co/w0wyRcs/20231008133231-fpdl-in-electronic-sports-competition-background-3d-illustration-1419-2781-medium.jpg)] bg-cover  bg-no-repeat text-center  ">
         
         <h1 className="lg:text-6xl font-bold mt-28 lg:mt-56 text-orange-500">Planning Something Special For Your <br /> <span className="text-white">Moments</span>? </h1>
         <button  className="bg-yellow-500 mt-10  text-white text-2xl font-bold px-12 py-4 rounded-lg">create Your Event</button>
@@ -66,9 +66,9 @@ export default function SimpleSlider() {
 
 {/* 6 */}
 
-      <div className=" h-[80vh] rounded-lg bg-[url(https://i.ibb.co/gDLG1MB/20231008002246-fpdl-in-avatars-sandbox-metaverse-party-online-meetings-via-vr-cameras-metaverse-3d-3.jpg)] bg-cover  bg-no-repeat text-center  ">
+      <div className=" h-[80vh] rounded-lg bg-[url(https://i.ibb.co/wQdcCGf/20231008133418-fpdl-in-man-enjoying-vr-headset-53876-101874-large.jpg)] bg-cover  bg-no-repeat text-center  ">
         
-        <h1 className="lg:text-6xl font-bold mt-28 lg:mt-56 text-white">Create Beautiful <span className="text-orange-500">Memories</span> <br /> At Every Event</h1>
+        <h1 className="lg:text-6xl font-bold mt-28 lg:mt-56 text-black">Create Beautiful <span className="text-orange-500">Memories</span> <br /> At Every Event</h1>
         <button  className="bg-yellow-500 mt-10  text-white text-2xl font-bold px-12 py-4 rounded-lg">create Your Event</button>
         
         
