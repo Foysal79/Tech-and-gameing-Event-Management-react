@@ -24,7 +24,16 @@ const Login = () => {
         })
         .catch(error => {
           console.log(error)
-          toast.error(error.message)
+          if (error.code === 'auth/invalid-email')
+          {
+            toast.error('Invalid email format. Please enter a valid email address.')
+          }
+          else if (error.code === 'auth/wrong-password') {
+            toast.error('Invalid password. Please check your password and try again.');
+          } else {
+            toast.error(error.code);
+          }
+          
 
         })
     }

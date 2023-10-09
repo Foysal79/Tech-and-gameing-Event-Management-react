@@ -1,8 +1,15 @@
-# React + Vite
+# EvenTo
+# Live Link : 
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+- Tech and gaming events Organization or participation can be done through this website.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Various coding events or contests can be participated in.
+
+- You can see the schedule of any tech and gaming events currently available.
+
+- Various types of gaming competitions can be participated.
+
+- If you want to participate or organize any tech and gaming event, you can take our help through this website.
+
+
