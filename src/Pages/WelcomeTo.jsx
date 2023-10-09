@@ -1,13 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const RecentEvent = () => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000, 
+      easing: 'ease-in-out', 
+    });
+  }, []);
   return (
     <div className="text-center pt-4 lg:pt-16  ">
-      <h1 className="text-5xl font-extrabold">
+      <h1 data-aos="zoom-in-up" className="text-5xl font-extrabold">
         WELCOM TO <span className="text-blue-700">EVENTO</span>{" "}
       </h1>
-      <div className="grid lg:grid-cols-2 w-8/12 mx-auto mt-14 gap-8">
+      <div data-aos="zoom-in-up" className="grid lg:grid-cols-2 w-8/12 mx-auto mt-14 gap-8">
 
 
         <div>
