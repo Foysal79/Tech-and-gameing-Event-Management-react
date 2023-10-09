@@ -13,7 +13,9 @@ const Home = () => {
     return (
         <div className='space-y-10'>
             
+            
             <SimpleSlider></SimpleSlider>
+            
             <RecentEvent></RecentEvent>
             <PopularEvent></PopularEvent>
             

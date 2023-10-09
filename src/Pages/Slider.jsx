@@ -14,7 +14,7 @@ export default function SimpleSlider() {
     slidesToScroll: 1
   };
   return (
-    <Slider {...settings} className="h-[80vh]">
+    <Slider {...settings} className="h-[80vh] lg:w-11/12 mx-auto  mt-1 ">
 
 
 

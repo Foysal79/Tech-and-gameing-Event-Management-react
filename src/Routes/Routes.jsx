@@ -12,6 +12,7 @@ import PrivateRoute from "./PrivateRoute";
 import ContactUs from "../PrivateRoute/ContactUs";
 import UCEvent from "../PrivateRoute/UCEvent";
 import UpComingEvent from "../PrivateRoute/UpComingEvent";
+import Teams from "../Pages/Teams";
 
 
 
@@ -55,12 +56,16 @@ const router = createBrowserRouter([
         },
         {
           path: '/contact',
-          element: <PrivateRoute> <ContactUs></ContactUs> </PrivateRoute>
+          element:  <ContactUs></ContactUs>
         },
         {
           path : '/uoComingEvent',
           element : <PrivateRoute> <UpComingEvent></UpComingEvent> </PrivateRoute>,
           loader: () => fetch('/data.json'),
+        },
+        {
+          path : "/team",
+          element: <PrivateRoute><Teams></Teams></PrivateRoute>
         }
         
       ]

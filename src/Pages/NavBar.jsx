@@ -8,15 +8,20 @@ const NavBar = () => {
 
     const linkNav = <>
     <li><NavLink className="mr-4" to='/' >Home</NavLink></li>
-    <li><NavLink className="mr-4" to='/Service' >Event List</NavLink></li>
+    
+       <li><NavLink className="mr-4" to='/Service' >Event List</NavLink></li>
+    
     {
       user && <li><NavLink className="mr-4" to='/uoComingEvent' >Up coming event</NavLink></li>
     }
     <li><NavLink className="mr-4" to='/about' >About Us</NavLink></li>
     <li><NavLink className="mr-4" to='/blog' >Blog</NavLink></li>
+    
+    <li><NavLink className="mr-4" to='/contact' >Contact us</NavLink></li>
     {
-      user &&  <li><NavLink className="mr-4" to='/contact' >Contact us</NavLink></li>
+      user && <li><NavLink className="mr-4" to='/team' >Our Team</NavLink></li>
     }
+    
     
    
    
