@@ -12,4 +12,17 @@
 
 - If you want to participate or organize any tech and gaming event, you can take our help through this website.
 
+## using technology : 
+# Frontend
+- HTML5 .
+- CSS3 .
+- framework css tailwind .
+- tailwind library daisyui .
+- JavaScript .
+- Firebase .
+- React js .
+- React-router .
+- react-hot-toast .
+
+
 
